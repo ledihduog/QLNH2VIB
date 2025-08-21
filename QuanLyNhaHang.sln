@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhaHang", "QuanLyNhaHang\QuanLyNhaHang.csproj", "{B6997007-154C-489D-9F9A-E7234571EF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhaHang_Test", "QuanLyNhaHang_Test\QuanLyNhaHang_Test.csproj", "{63AE5FAC-2E78-4373-A63E-4043B26E4F30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6997007-154C-489D-9F9A-E7234571EF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6997007-154C-489D-9F9A-E7234571EF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6997007-154C-489D-9F9A-E7234571EF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6997007-154C-489D-9F9A-E7234571EF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AE5FAC-2E78-4373-A63E-4043B26E4F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AE5FAC-2E78-4373-A63E-4043B26E4F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AE5FAC-2E78-4373-A63E-4043B26E4F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AE5FAC-2E78-4373-A63E-4043B26E4F30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F93E0312-5530-4B7D-A747-399F234484C5}
+	EndGlobalSection
+EndGlobal

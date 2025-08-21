@@ -1,0 +1,40 @@
+Bước 1: Cài đặt và chạy redis hoặc chạy file redis-server.exe trong folder đính kèm
+Nếu sử dụng cổng khác cổng mặc định (6379) thì cần cấu hình lại trong code (file appsettings.json)
+
+
+__________________________________________________________________________________________________________
+Bước 2: Chỉnh sửa lại connection string cho phù hợp với PC local trong file Constants.cs
+
+
+__________________________________________________________________________________________________________
+Bước 3: Migration Model to DB
+Vì dự án code theo kiểu code first chứ k phải DB first nên cần migration để ánh xạ model tạo bảng và DB từ code
+Chạy lệnh: PM> dotnet ef migrations add QLNH20250821 --context QLNHContext
+sau đó chạy lệnh: PM> dotnet ef database update --context QLNHContext
+Lưu ý cần cd vào folder chứa project và cài Microsoft.EntityFrameworkCore.Tools mới chạy được lệnh tại PM>
+
+
+__________________________________________________________________________________________________________
+Bước 4: Chạy code sẽ hiển thị Swagger các link API endpoint
+
+
+__________________________________________________________________________________________________________
+Bước 5: Sử dụng các link trong Roles để tạo ra 2 role là "ADMIN" và "USER"
+
+
+__________________________________________________________________________________________________________
+Bước 6: Đăng kí user bằng endpoint /api/UserLogin/Create. User được tạo mặc định sẽ có quyền "USER"
+
+
+__________________________________________________________________________________________________________
+Bước 7: Đăng nhập bằng endpoint /api/Auth/SigIn để lấy token
+Lưu ý với các controller chứa [Authorize(Roles = ADMINISTRATOR)] thì cần token có role ADMIN
+
+
+__________________________________________________________________________________________________________
+Bước 8: Thực hiện tạo, xóa, sửa và get sản phẩm bằng các endpoint trong Product
+
+
+__________________________________________________________________________________________________________
+Bước 9: Thực hiện tạo, xóa, sửa và get đơn bằng các endpoint trong Order. Đơn sẽ được tạo thành công vào bảng Order và tự động trừ stock trong bảng Product
+Lưu ý cần login để lấy user get đơn và tạo đơn
